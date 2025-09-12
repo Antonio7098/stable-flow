@@ -1,0 +1,31 @@
+# Features CSV Template
+
+## Instructions for Creating Features CSV
+1. **Feature Identification**: Assign unique IDs to each feature (F001, F002, etc.)
+2. **Clear Naming**: Use descriptive, concise feature names
+3. **Detailed Descriptions**: Provide enough detail for understanding without being verbose
+4. **Priority Setting**: Use High/Medium/Low based on business value and dependencies
+5. **Status Tracking**: Use consistent status values (Not Started, In Progress, Completed, Blocked)
+6. **Epic Grouping**: Group related features under common epics
+7. **Story Point Estimation**: Use consistent estimation scale (Fibonacci: 1, 2, 3, 5, 8, 13, 21)
+8. **Assignee Management**: Assign features to specific team members
+9. **Date Planning**: Set realistic start and due dates based on dependencies
+10. **Dependency Mapping**: Clearly identify feature dependencies
+11. **Acceptance Criteria**: Use Gherkin format (Given/When/Then) for clear, testable criteria
+    - Example: "Given I am an unauthenticated user, When I submit valid credentials to the login form, Then I should be redirected to the dashboard"
+12. **TDD Section Link**: Link to specific Technical Design Document sections for implementation context
+13. **Sprint Assignment**: Assign features to specific sprints (e.g., "Sprint 2", "Sprint 3")
+14. **Risk Level**: Assess risk as High/Medium/Low based on complexity and dependencies
+15. **Business Value Score**: Rate business value on 1-10 scale (10 = highest value)
+16. **Technical Debt Impact**: Assess technical debt impact as High/Medium/Low
+17. **Feature Flag**: Specify feature flag name or N/A if not using feature flags
+18. **A/B Test ID**: Assign A/B test identifier if feature will be tested
+19. **Revenue Impact**: Estimate revenue impact in $ or percentage
+20. **User Segment**: Define target user segment (e.g., "Premium Users", "New Users")
+21. **Master Index Update**: If cascade=true in development-guide.md, update master-index.md when features are added, modified, or reprioritized
+22. **Notes Section**: Use for additional context, blockers, or special considerations
+
+Feature ID,Feature Name,Description,Priority,Status,Epic,Story Points,Assignee,Start Date,Due Date,Dependencies,Acceptance Criteria (Gherkin),TDD Section Link,Sprint Assignment,Risk Level,Business Value Score,Technical Debt Impact,Feature Flag,A/B Test ID,Revenue Impact,User Segment,Notes
+[F001],[Feature Name],[Brief description],[High/Medium/Low],[Status],[Epic Name],[Points],[Name],[YYYY-MM-DD],[YYYY-MM-DD],[Dependencies],[Criteria],[Notes]
+[F002],[Feature Name],[Brief description],[High/Medium/Low],[Status],[Epic Name],[Points],[Name],[YYYY-MM-DD],[YYYY-MM-DD],[Dependencies],[Criteria],[Notes]
+[F003],[Feature Name],[Brief description],[High/Medium/Low],[Status],[Epic Name],[Points],[Name],[YYYY-MM-DD],[YYYY-MM-DD],[Dependencies],[Criteria],[Notes]

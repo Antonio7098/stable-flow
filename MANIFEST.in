@@ -1,0 +1,43 @@
+# Include documentation
+include README.md
+include CHANGELOG.md
+include LICENSE
+include VERSION
+
+# Include configuration files
+include pyproject.toml
+include requirements.txt
+include requirements-dev.txt
+
+# Include documentation
+recursive-include docs *.md
+
+# Include examples
+recursive-include examples *.yaml *.yml *.md
+
+# Include templates
+recursive-include templates *.md *.csv *.yaml *.yml
+
+# Include scripts
+include scripts/*.py
+include scripts/stable-flow
+
+# Exclude development files
+exclude .gitignore
+exclude .pre-commit-config.yaml
+exclude pytest.ini
+exclude tox.ini
+global-exclude *.pyc
+global-exclude __pycache__
+global-exclude .DS_Store
+global-exclude Thumbs.db
+
+# Exclude test files from distribution
+exclude tests/*
+exclude tests/conftest.py
+exclude tests/test_*.py
+exclude tests/utils/*
+recursive-exclude tests *</content>
+</xai:function_call name="write">
+<parameter name="file_path">LICENSE
+

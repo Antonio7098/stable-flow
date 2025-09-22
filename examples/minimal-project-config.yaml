@@ -1,0 +1,267 @@
+# Minimal Tier Project Configuration Example
+# This demonstrates the simplest possible configuration
+
+project:
+  name: "My Minimal Project"
+  description: "A simple project using minimal tier documentation"
+  author: "John Doe"
+  version: "1.0.0"
+  created: "2024-12-09"
+
+# Minimal tier - only essential documents
+tier: "minimal"
+
+# Basic features
+features:
+  cascade: false
+
+# No advanced sections for minimal tier
+sections:
+  prd:
+    competitive_analysis: false
+    user_experience: false
+    data_strategy: false
+    competitive_moat: false
+    monetization: false
+  technical_design:
+    accessibility: false
+    security_detailed: false
+    api_specification: false
+    architectural_decisions: false
+  sprint_template:
+    parallel_agents: false
+    environmental_impact: false
+    api_integration: false
+  sprint_planning:
+    ai_assisted_velocity: false
+    ai_specific_risks: false
+  features_csv:
+    business_metrics: false
+    sprint_assignment: false
+    risk_level: false
+
+# Technical Design data
+technical_design:
+  version: "1.0"
+  last_updated: "2024-12-09"
+  reviewers: "Technical Team"
+  system_purpose: "A simple system to meet basic requirements"
+  tech_stack:
+    frontend: "Web framework"
+    backend: "Backend framework"
+    database: "Database"
+    infrastructure: "Cloud hosting"
+    devops: "Basic deployment"
+  architecture_diagram: "graph TB\n    A[Frontend] --> B[Backend]\n    B --> C[Database]"
+  components:
+    - name: "Frontend"
+      purpose: "User interface"
+      key_features: "Basic UI"
+      technologies: "Web tech"
+      interfaces: "API calls"
+    - name: "Backend"
+      purpose: "Business logic"
+      key_features: "API endpoints"
+      technologies: "Backend tech"
+      interfaces: "Database, Frontend"
+  data_models:
+    - name: "User"
+      description: "User data"
+      fields: "id, name, email"
+      relationships: "None"
+  database:
+    primary: "Database"
+    caching: "Cache"
+    backup: "Basic backup"
+    migration: "Manual migration"
+  data_flow_diagram: "graph LR\n    A[User] --> B[System] --> C[Database]"
+  security:
+    auth_method: "Basic auth"
+    authz_model: "Simple"
+    session_mgmt: "Sessions"
+    encryption_at_rest: "Basic encryption"
+    encryption_in_transit: "HTTPS"
+    key_management: "Basic"
+    data_classification: "Basic"
+  api:
+    version: "1.0.0"
+    base_url: "https://api.example.com"
+    auth: "API Key"
+    versioning:
+      strategy: "URL versioning"
+      deprecation: "6 months notice"
+      compatibility: "Backward compatible"
+    endpoints:
+      - path: "/api/data"
+        method: "GET"
+        description: "Get data"
+        request_body: "None"
+        response: "JSON data"
+        status_codes: "200"
+  performance:
+    api_response: "< 1s"
+    page_load: "< 2s"
+    db_queries: "< 100ms"
+    concurrent_users: "100"
+    rps: "10"
+    data_processing: "Real-time"
+    scaling:
+      horizontal: "Load balancer"
+      vertical: "Instance upgrade"
+    caching: "Browser cache"
+  integrations:
+    external: []
+    internal: []
+  deployment:
+    compute: "1 vCPU, 1GB RAM"
+    network: "Basic networking"
+    storage: "10GB storage"
+    cicd:
+      source_control: "Git"
+      build: "Manual build"
+      testing: "Manual testing"
+      deployment: "Manual deployment"
+    environments:
+      development: "Local development"
+      staging: "Basic staging"
+      production: "Production server"
+  monitoring:
+    logging:
+      levels: "INFO, ERROR"
+      aggregation: "Basic logging"
+      retention: "30 days"
+    metrics:
+      application: "Basic metrics"
+      infrastructure: "Server metrics"
+      business: "Usage metrics"
+    alerting:
+      critical: "System down"
+      warning: "High load"
+      channels: "Email"
+  ai_prompts:
+    primary: 'You are a senior software architect helping with technical design and implementation.'
+    context: 'Focus on modern best practices and scalable architecture'
+    version_control: 'Git-based prompt versioning'
+    testing: 'A/B testing of prompts'
+    performance: 'Monitor prompt effectiveness'
+    ethics:
+      bias: 'Ensure unbiased technical decisions'
+      transparency: 'Document AI-assisted decisions'
+      oversight: 'Human review of critical decisions'
+  references: []
+  glossary: {}
+
+# Sprint Planning data
+sprint_planning:
+  version: "1.0"
+  last_updated: "2024-12-09"
+  timeline:
+    start_date: "2024-12-09"
+    end_date: "2025-01-09"
+    duration: "1 month"
+    sprint_length: "2 weeks"
+    total_sprints: "2"
+  team:
+    capacity: "20 story points per sprint"
+    velocity: "18 points/sprint"
+    ai_velocity: "22 points/sprint"
+    velocity_multiplier: "1.22x"
+    members: "2 developers"
+  sprints: []
+  milestones: []
+  dependencies:
+    cross_sprint: []
+    external: []
+  risks:
+    project_level: []
+  ai_risks:
+    development:
+      - name: "Learning curve"
+        description: "Team adapting to new tools"
+        impact: "Initial productivity dip"
+        mitigation: "Training and documentation"
+    context: []
+    quality: []
+  resources:
+    team_members: []
+    external: []
+  buffer:
+    sprint_buffer: "10%"
+    project_buffer: "15%"
+    scope_change: "5%"
+    guidelines: []
+  reviews:
+    sprint_planning: []
+    velocity: []
+  metrics:
+    velocity:
+      historical: "15 points/sprint"
+      current: "18 points/sprint"
+      trend: "Improving"
+    quality: []
+    progress: []
+  references: []
+  glossary: {}
+
+# PRD data
+prd:
+  version: "1.0"
+  last_updated: "2024-12-09"
+  stakeholders: "Project Team, Stakeholders"
+  vision: "A simple, effective solution for our users"
+  primary_goal: "Deliver value to users efficiently"
+  success_metrics: "User satisfaction, feature adoption"
+  target_users: "End users, administrators"
+  features: []
+  mvp_features: []
+  post_mvp_features: []
+  technical:
+    performance:
+      response_time: "< 2 seconds"
+      throughput: "100 requests/second"
+      availability: "99.9%"
+    security:
+      authentication: "Basic auth"
+      data_protection: "Encrypted storage"
+      compliance: "Basic security standards"
+    integrations: []
+  timeline:
+    phases: []
+    milestones: []
+  risks:
+    technical: []
+    business: []
+  kpis:
+    primary: []
+    secondary: []
+  dependencies:
+    external: []
+    internal: []
+  assumptions: []
+  references: []
+  glossary: {}
+
+# Only core templates
+templates:
+  core:
+    prd: true
+    technical_design: true
+    features_csv: true
+    development_guide: false
+    sprint_planning: false
+    sprint_template: false
+    master_index: false
+
+# Output configuration
+output:
+  directory: "docs"
+  format: "markdown"
+  include_toc: true
+  include_metadata: true
+
+# Basic AI configuration
+ai_agents:
+  system_prompt: "You are an AI coding assistant helping with software development."
+  parallel_processing: false
+  context_window: 4000
+  temperature: 0.7

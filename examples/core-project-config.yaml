@@ -1,0 +1,431 @@
+# Core Tier Project Configuration Example
+# This demonstrates a typical project with standard documentation
+
+project:
+  name: "My Core Project"
+  description: "A standard project using core tier documentation"
+  author: "Jane Smith"
+  version: "1.0.0"
+  created: "2024-12-09"
+
+# Core tier - standard documentation set
+tier: "core"
+
+# Enable cascading updates
+features:
+  cascade: true
+
+# Enable some advanced sections
+sections:
+  prd:
+    competitive_analysis: true
+    user_experience: true
+    data_strategy: false
+    competitive_moat: false
+    monetization: false
+  
+  technical_design:
+    accessibility: true
+    security_detailed: true
+    api_specification: true
+    architectural_decisions: true
+  
+  sprint_template:
+    parallel_agents: true
+    environmental_impact: false
+    api_integration: true
+  
+  sprint_planning:
+    ai_assisted_velocity: true
+    ai_specific_risks: true
+  
+  features_csv:
+    business_metrics: true
+    sprint_assignment: true
+    risk_level: true
+
+  development_guide:
+    agile_practices: false
+    modern_paradigms: false
+    automation_hooks: false
+    profiling_tools: false
+
+# Core templates
+templates:
+  core:
+    prd: true
+    technical_design: true
+    features_csv: true
+    development_guide: true
+    sprint_planning: true
+    sprint_template: true
+    master_index: false
+
+# PRD data
+prd:
+  version: "1.0"
+  last_updated: "2024-12-09"
+  stakeholders: "Project Team, Product Manager, Stakeholders"
+  vision: "A comprehensive solution that delivers exceptional value to our users"
+  primary_goal: "Build a robust, scalable platform that meets user needs"
+  success_metrics: "User engagement, feature adoption, performance metrics"
+  target_users: "End users, administrators, developers"
+  competitors:
+    - name: "Competitor A"
+      strengths: "Strong market presence, established user base"
+      weaknesses: "Outdated technology, poor UX"
+      market_position: "Market leader but vulnerable"
+  market_opportunities:
+    - name: "Modern UX Gap"
+      description: "Competitors have poor user experience"
+      advantage: "We focus on modern, intuitive design"
+  personas:
+    - name: "Primary User"
+      demographics: "25-45, tech-savvy professionals"
+      pain_points: "Complex workflows, slow performance"
+      journey_map: "Discovery → Trial → Adoption → Retention"
+  features: []
+  mvp_features: []
+  post_mvp_features: []
+  technical:
+    performance:
+      response_time: "< 1 second"
+      throughput: "1000 requests/second"
+      availability: "99.9%"
+    security:
+      authentication: "OAuth 2.0 + JWT"
+      data_protection: "AES-256 encryption"
+      compliance: "SOC2, GDPR compliant"
+    integrations: []
+  timeline:
+    phases: []
+    milestones: []
+  risks:
+    technical: []
+    business: []
+  kpis:
+    primary: []
+    secondary: []
+  dependencies:
+    external: []
+    internal: []
+  assumptions: []
+  references: []
+  glossary: {}
+
+# Technical Design data
+technical_design:
+  version: "1.0"
+  last_updated: "2024-12-09"
+  reviewers: "Senior Developer, Tech Lead"
+  system_purpose: "A modern web application that provides core functionality to users"
+  tech_stack:
+    frontend: "React 18, TypeScript, Tailwind CSS"
+    backend: "Node.js 18, Express, TypeScript"
+    database: "PostgreSQL 15, Redis 7"
+    infrastructure: "AWS ECS, RDS, S3"
+    devops: "Docker, GitHub Actions, Terraform"
+  architecture_diagram: "graph TB\n    A[Frontend] --> B[API Gateway]\n    B --> C[Backend Services]\n    C --> D[Database]"
+  components: []
+  data_models: []
+  database:
+    primary: "PostgreSQL 15"
+    caching: "Redis 7"
+    backup: "Daily automated backups"
+    migration: "Alembic migrations"
+  data_flow_diagram: "graph LR\n    A[User] --> B[Frontend]\n    B --> C[API]\n    C --> D[Database]"
+  security:
+    auth_method: "JWT + OAuth 2.0"
+    authz_model: "RBAC"
+    session_mgmt: "Stateless JWT tokens"
+    encryption_at_rest: "AES-256"
+    encryption_in_transit: "TLS 1.3"
+    key_management: "AWS KMS"
+    data_classification: "Public, Internal, Confidential"
+  api:
+    version: "1.0.0"
+    base_url: "https://api.example.com"
+    auth: "Bearer Token"
+    versioning:
+      strategy: "URL versioning (v1, v2)"
+      deprecation: "6 months notice for breaking changes"
+      compatibility: "Backward compatible within major version"
+    endpoints: []
+  performance:
+    api_response: "< 200ms"
+    page_load: "< 2s"
+    db_queries: "< 100ms"
+    concurrent_users: "1000+"
+    rps: "1000+"
+    data_processing: "Real-time processing"
+    scaling:
+      horizontal: "Auto-scaling groups"
+      vertical: "Instance type upgrades"
+    caching: "Redis, CDN"
+  integrations:
+    external: []
+    internal: []
+  deployment:
+    compute: "2 vCPU, 4GB RAM minimum"
+    network: "High bandwidth, low latency"
+    storage: "SSD, 100GB minimum"
+    cicd:
+      source_control: "GitHub"
+      build: "Docker, npm"
+      testing: "Jest, Cypress"
+      deployment: "Blue-green deployment"
+    environments:
+      development: "Local Docker setup"
+      staging: "AWS ECS staging"
+      production: "AWS ECS production"
+  monitoring:
+    logging:
+      levels: "DEBUG, INFO, WARN, ERROR"
+      aggregation: "ELK Stack"
+      retention: "30 days"
+    metrics:
+      application: "Response time, error rate"
+      infrastructure: "CPU, memory, disk"
+      business: "User actions, conversions"
+    alerting:
+      critical: "System down, data loss"
+      warning: "Performance degradation"
+      channels: "Email, Slack, PagerDuty"
+  accessibility:
+    wcag_level: "AA"
+    screen_reader: "NVDA, JAWS, VoiceOver"
+    keyboard_nav: "Full keyboard accessibility"
+    aria:
+      landmarks: "main, navigation, banner, contentinfo"
+      live_regions: "For status updates and notifications"
+      form_labels: "ARIA labels and descriptions"
+    testing:
+      automated: "axe-core, WAVE"
+      manual: "Screen reader testing, keyboard navigation"
+      user: "Testing with users with disabilities"
+  architectural_decisions: []
+  future_considerations:
+    technology: "Modern framework adoption"
+    scalability: "Microservices migration"
+    extensibility: "Plugin architecture"
+  ai_prompts:
+    primary: "You are a senior software architect helping with technical design and implementation."
+    context: "Focus on modern best practices and scalable architecture"
+    version_control: "Git-based prompt versioning"
+    testing: "A/B testing of prompts"
+    performance: "Monitor prompt effectiveness"
+    ethics:
+      bias: "Ensure unbiased technical decisions"
+      transparency: "Document AI-assisted decisions"
+      oversight: "Human review of critical decisions"
+  references: []
+  glossary: {}
+  diagrams: []
+
+# Features data
+features_list:
+  - id: "F001"
+    name: "User Authentication"
+    description: "Secure user login and registration system"
+    priority: "High"
+    status: "Not Started"
+    epic: "User Management"
+    story_points: "8"
+    assignee: "Backend Developer"
+    start_date: "2024-12-16"
+    due_date: "2024-12-23"
+    dependencies: "None"
+    acceptance_criteria: "Given a user with valid credentials, When they submit the login form, Then they should be authenticated and redirected to dashboard"
+    tdd_section_link: "Authentication & Authorization"
+    sprint_assignment: "Sprint 1"
+    risk_level: "Low"
+    business_value_score: "9"
+    technical_debt_impact: "Low"
+    feature_flag: "auth_enabled"
+    ab_test_id: "AUTH_001"
+    revenue_impact: "High"
+    user_segment: "All Users"
+    notes: "Critical for MVP"
+
+# Sprint Planning data
+sprint_planning:
+  version: "1.0"
+  last_updated: "2024-12-09"
+  timeline:
+    start_date: "2024-12-09"
+    end_date: "2025-03-09"
+    duration: "12 weeks"
+    sprint_length: "2 weeks"
+    total_sprints: "6"
+  team:
+    capacity: "40 story points per sprint"
+    velocity: "35 points/sprint (average)"
+    ai_velocity: "45 points/sprint (with AI tools)"
+    velocity_multiplier: "1.3x (AI-assisted vs manual)"
+    members: "Jane Smith (PM), John Doe (Dev), Alice Johnson (Design)"
+  sprints: []
+  milestones: []
+  dependencies:
+    cross_sprint: []
+    external: []
+  risks:
+    project_level: []
+  resources:
+    team_members: []
+    external: []
+  buffer:
+    sprint_buffer: "10% per sprint"
+    project_buffer: "15% total"
+    scope_change: "5% for scope changes"
+    guidelines: []
+  reviews:
+    sprint_planning: []
+    velocity: []
+  metrics:
+    velocity:
+      historical: "35 points/sprint"
+      current: "40 points/sprint"
+      trend: "Increasing"
+    quality: []
+    progress: []
+  references: []
+  glossary: {}
+
+# Sprint data
+sprint:
+  number: "1"
+  name: "Foundation Sprint"
+  start_date: "2024-12-09"
+  end_date: "2024-12-23"
+  duration: "2"
+  goal: "Establish project foundation and core infrastructure"
+  owner: "John Doe"
+  ai_agents: "Claude, GitHub Copilot, ChatGPT"
+  capacity: "40"
+  objectives:
+    - "Set up development environment and CI/CD pipeline"
+    - "Implement user authentication system"
+    - "Create basic project structure and documentation"
+  success_criteria:
+    - "All development tools are configured and working"
+    - "Authentication system is fully functional"
+    - "Project documentation is complete and up-to-date"
+  deliverables:
+    - "Working development environment"
+    - "User authentication API"
+    - "Project documentation"
+  tasks: []
+  parallel_agents:
+    coordination: []
+    conflict_resolution: "Consensus-based decision making"
+    hallucination_mitigation: "Code review and testing"
+  api_integration:
+    external: []
+    internal: []
+  environmental:
+    carbon_footprint: "Use efficient algorithms and caching"
+    energy_efficiency: "Optimize database queries and API calls"
+    sustainable_practices: []
+  definition_of_done:
+    code_quality: []
+    testing: []
+    documentation: []
+    deployment: []
+  velocity:
+    planned_points: "40"
+    duration: "14"
+    daily_velocity: "2.9"
+    completed_points: "0"
+    actual_duration: "0"
+    actual_daily_velocity: "0"
+    analysis: "To be calculated during sprint"
+  retrospective:
+    metrics: []
+    went_well: []
+    improvements: []
+    action_items: []
+  changelog:
+    planning:
+      date: "2024-12-09"
+      changes: "Initial sprint planning"
+    daily_updates: []
+    review:
+      date: "2024-12-23"
+      changes: "Sprint review outcomes"
+    master_index:
+      date: "2024-12-09"
+      changes: "Initial master index setup"
+    prompt_iterations: []
+  references: []
+  glossary: {}
+
+# Development Guide data
+development_guide:
+  version: "1.0"
+  last_updated: "2024-12-09"
+  coding_standards: {}
+  general_principles: []
+  code_review_checklist: []
+  project_structure: ""
+  file_naming: []
+  import_organization: []
+  git:
+    branching_strategy: "GitFlow with feature branches"
+    commit_convention: "Conventional Commits (type: description)"
+    pr_process: []
+  testing:
+    levels: {}
+    organization: ""
+    mocking: ""
+  error_handling:
+    types: {}
+    logging: []
+    monitoring: ""
+  performance:
+    frontend: []
+    backend: []
+    database: []
+    caching: ""
+  security:
+    auth: []
+    data_protection: []
+    input_validation: []
+    headers: []
+  modern_paradigms:
+    best_practices: []
+    design_patterns: {}
+    architecture: []
+  automation:
+    pre_commit_hooks: []
+    pr_automation: []
+    automated_testing: []
+  profiling:
+    frontend: []
+    backend: []
+    monitoring: []
+  scripts:
+    development: {}
+    build: {}
+    deployment: {}
+  anti_patterns:
+    code_quality: []
+    security: []
+    performance: []
+    architecture: []
+  references: []
+  glossary: {}
+  tools: {}
+
+# Output configuration
+output:
+  directory: "docs"
+  format: "markdown"
+  include_toc: true
+  include_metadata: true
+
+# Enhanced AI configuration
+ai_agents:
+  system_prompt: "You are an AI coding assistant specializing in full-stack development with expertise in modern web technologies."
+  parallel_processing: true
+  context_window: 8000
+  temperature: 0.7

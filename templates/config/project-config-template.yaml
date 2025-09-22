@@ -1,0 +1,151 @@
+# Stable Flow Project Configuration Template
+# Copy this file to your project root as project-config.yaml and customize
+
+# Project Information
+project:
+  name: "{{ project_name }}"
+  description: "{{ project_description }}"
+  author: "{{ author_name }}"
+  version: "1.0.0"
+  created: "{{ creation_date }}"
+
+# Tier Configuration
+tier: "{{ tier_name }}"  # Options: minimal, core, advanced, custom
+
+# Feature Flags
+features:
+  cascade: {{ cascade_enabled | default(false) }}  # Enable cascading updates to planning docs
+  competitive_analysis: {{ competitive_analysis | default(false) }}
+  user_experience: {{ user_experience | default(false) }}
+  data_strategy: {{ data_strategy | default(false) }}
+  competitive_moat: {{ competitive_moat | default(false) }}
+  monetization: {{ monetization | default(false) }}
+
+# Document Sections (tier-based)
+sections:
+  prd:
+    competitive_analysis: {{ prd_competitive_analysis | default(false) }}
+    user_experience: {{ prd_user_experience | default(false) }}
+    data_strategy: {{ prd_data_strategy | default(false) }}
+    competitive_moat: {{ prd_competitive_moat | default(false) }}
+    monetization: {{ prd_monetization | default(false) }}
+  
+  technical_design:
+    accessibility: {{ tdd_accessibility | default(false) }}
+    security_detailed: {{ tdd_security_detailed | default(false) }}
+    api_specification: {{ tdd_api_spec | default(false) }}
+    architectural_decisions: {{ tdd_arch_decisions | default(false) }}
+  
+  sprint_template:
+    parallel_agents: {{ sprint_parallel_agents | default(false) }}
+    environmental_impact: {{ sprint_environmental | default(false) }}
+    api_integration: {{ sprint_api_integration | default(false) }}
+    agile_documents: {{ sprint_agile_documents | default(false) }}
+  
+  sprint_planning:
+    agile_documents: {{ sprint_planning_agile_documents | default(false) }}
+  
+  features_csv:
+    business_metrics: {{ features_business_metrics | default(false) }}
+    feature_flags: {{ features_feature_flags | default(false) }}
+    sprint_assignment: {{ features_sprint_assignment | default(false) }}
+  
+  # Scrum methodology sections
+  scrum:
+    ceremonies: {{ scrum_ceremonies | default(false) }}
+    roles: {{ scrum_roles | default(false) }}
+    artifacts: {{ scrum_artifacts | default(false) }}
+    metrics: {{ scrum_metrics | default(false) }}
+  
+  # Kanban methodology sections
+  kanban:
+    board_setup: {{ kanban_board_setup | default(false) }}
+    flow_metrics: {{ kanban_flow_metrics | default(false) }}
+    cadences: {{ kanban_cadences | default(false) }}
+    policies: {{ kanban_policies | default(false) }}
+  
+  # Agile hybrid sections
+  agile_hybrid:
+    methodology_selection: {{ agile_methodology_selection | default(false) }}
+    transformation_roadmap: {{ agile_transformation_roadmap | default(false) }}
+    team_charter: {{ agile_team_charter | default(false) }}
+
+# Template Customization
+templates:
+  # Core templates to include
+  core:
+    prd: {{ include_prd | default(true) }}
+    technical_design: {{ include_technical_design | default(true) }}
+    features_csv: {{ include_features_csv | default(true) }}
+    development_guide: {{ include_development_guide | default(true) }}
+    sprint_planning: {{ include_sprint_planning | default(true) }}
+    sprint_template: {{ include_sprint_template | default(true) }}
+    master_index: {{ include_master_index | default(true) }}
+  
+  # Advanced templates to include
+  advanced:
+    adr: {{ include_adr | default(false) }}
+    performance_tracker: {{ include_performance_tracker | default(false) }}
+    security_audit: {{ include_security_audit | default(false) }}
+    technical_debt: {{ include_technical_debt | default(false) }}
+    api_evolution: {{ include_api_evolution | default(false) }}
+    
+    # Scrum templates (advanced tier only)
+    scrum_master_guide: {{ include_scrum_master_guide | default(false) }}
+    product_owner_guide: {{ include_product_owner_guide | default(false) }}
+    sprint_retrospective: {{ include_sprint_retrospective | default(false) }}
+    daily_standup: {{ include_daily_standup | default(false) }}
+    sprint_review: {{ include_sprint_review | default(false) }}
+    user_story: {{ include_user_story | default(false) }}
+    
+    # Kanban templates (advanced tier only)
+    kanban_board_setup: {{ include_kanban_board_setup | default(false) }}
+    kanban_metrics: {{ include_kanban_metrics | default(false) }}
+    work_item: {{ include_work_item | default(false) }}
+    kanban_cadences: {{ include_kanban_cadences | default(false) }}
+    
+    # Agile hybrid templates (advanced tier only)
+    agile_methodology_selection: {{ include_agile_methodology_selection | default(false) }}
+    sprint_kanban_hybrid: {{ include_sprint_kanban_hybrid | default(false) }}
+    agile_team_charter: {{ include_agile_team_charter | default(false) }}
+    agile_transformation_roadmap: {{ include_agile_transformation_roadmap | default(false) }}
+  
+  # Operations templates to include
+  operations:
+    incident_response: {{ include_incident_response | default(false) }}
+    data_migration: {{ include_data_migration | default(false) }}
+
+# Output Configuration
+output:
+  directory: "{{ output_directory | default('docs') }}"
+  format: "{{ output_format | default('markdown') }}"  # markdown, html, pdf
+  include_toc: {{ include_toc | default(true) }}
+  include_metadata: {{ include_metadata | default(true) }}
+
+# AI Agent Configuration
+ai_agents:
+  system_prompt: "{{ ai_system_prompt | default('You are an AI coding assistant helping with software development.') }}"
+  parallel_processing: {{ ai_parallel_processing | default(false) }}
+  context_window: {{ ai_context_window | default(8000) }}
+  temperature: {{ ai_temperature | default(0.7) }}
+
+# Validation Rules
+validation:
+  required_fields:
+    - project.name
+    - project.author
+    - tier
+  
+  tier_requirements:
+    minimal:
+      required_templates: ["prd", "technical_design", "features_csv"]
+    core:
+      required_templates: ["prd", "technical_design", "features_csv", "development_guide", "sprint_planning", "sprint_template"]
+    advanced:
+      required_templates: ["prd", "technical_design", "features_csv", "development_guide", "sprint_planning", "sprint_template", "master_index", "adr"]
+      # Agile templates are optional in advanced tier but recommended
+      recommended_templates: ["scrum_master_guide", "product_owner_guide", "kanban_board_setup", "agile_methodology_selection"]
+    custom:
+      # No required templates - user defines what they want
+      min_templates: 1
+

@@ -1,0 +1,81 @@
+# Pre-commit hooks configuration for Stable Flow
+# Install with: pre-commit install
+# Run manually: pre-commit run --all-files
+
+repos:
+  # General hooks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: trailing-whitespace
+        exclude: ^templates/
+      - id: end-of-file-fixer
+        exclude: ^templates/
+      - id: check-yaml
+      - id: check-toml
+      - id: check-added-large-files
+      - id: check-merge-conflict
+      - id: check-json
+      - id: debug-statements
+      - id: check-docstring-first
+
+  # Python-specific hooks
+  - repo: https://github.com/psf/black
+    rev: 22.10.0
+    hooks:
+      - id: black
+        language_version: python3
+
+  - repo: https://github.com/pycqa/isort
+    rev: 5.12.0
+    hooks:
+      - id: isort
+        args: ["--profile", "black"]
+
+  - repo: https://github.com/pycqa/flake8
+    rev: 6.0.0
+    hooks:
+      - id: flake8
+        args: ["--max-line-length=88", "--extend-ignore=E203,W503"]
+        exclude: ^(templates/|examples/)
+
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.0.0
+    hooks:
+      - id: mypy
+        additional_dependencies: [types-all]
+        exclude: ^(tests/|examples/|scripts/)
+
+  # Testing hooks
+  - repo: local
+    hooks:
+      - id: pytest
+        name: Run tests
+        entry: python -m pytest
+        language: system
+        pass_filenames: false
+        args: ["tests/", "--tb=short"]
+        stages: [push]
+
+  # Template validation
+  - repo: local
+    hooks:
+      - id: validate-templates
+        name: Validate Jinja2 templates
+        entry: python scripts/validate_templates.py
+        language: system
+        pass_filenames: false
+        files: ^templates/
+
+  # Configuration validation
+  - repo: local
+    hooks:
+      - id: validate-examples
+        name: Validate example configurations
+        entry: python scripts/validate_configs.py
+        language: system
+        pass_filenames: false
+        files: ^examples/</content>
+</xai:function_call">Now let me update the todo list to mark the README update as completed and move on to the release preparation.
+
+

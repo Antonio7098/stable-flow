@@ -1,0 +1,534 @@
+# Advanced Tier Project Configuration Example
+# This demonstrates the most comprehensive configuration with all features enabled
+
+project:
+  name: "My Advanced Project"
+  description: "An enterprise-grade project using advanced tier documentation"
+  author: "Enterprise Team"
+  version: "1.0.0"
+  created: "2024-12-09"
+
+# Advanced tier - comprehensive documentation suite
+tier: "advanced"
+
+# Enable all advanced features
+features:
+  cascade: true
+
+# Enable all sections and advanced features
+sections:
+  prd:
+    competitive_analysis: true
+    user_experience: true
+    data_strategy: true
+    competitive_moat: true
+    monetization: true
+
+  technical_design:
+    accessibility: true
+    security_detailed: true
+    api_specification: true
+    architectural_decisions: true
+
+  sprint_template:
+    parallel_agents: true
+    environmental_impact: true
+    api_integration: true
+
+  sprint_planning:
+    ai_assisted_velocity: true
+    ai_specific_risks: true
+
+  features_csv:
+    business_metrics: true
+    sprint_assignment: true
+    risk_level: true
+
+  master_index:
+    advanced_templates: true
+    operations_templates: true
+    adr_template: true
+
+# Advanced templates - all available templates
+templates:
+  core:
+    prd: true
+    technical_design: true
+    features_csv: true
+    development_guide: true
+    sprint_planning: true
+    sprint_template: true
+    master_index: true
+
+  advanced:
+    adr: true
+    performance_tracker: true
+    security_audit: true
+    technical_debt: true
+    api_evolution: true
+
+  operations:
+    incident_response: true
+    data_migration: true
+
+# Advanced AI configuration
+ai_agents:
+  system_prompt: "You are an enterprise-grade AI coding assistant specializing in scalable, secure, and maintainable software development. You have deep expertise in modern architecture patterns, security best practices, and performance optimization."
+  parallel_processing: true
+  context_window: 8000
+  temperature: 0.3  # Lower temperature for more consistent enterprise output
+
+# Comprehensive project data with all sections populated
+prd:
+  version: "2.0"
+  last_updated: "2024-12-09"
+  stakeholders: "Enterprise Stakeholders, Product Team, Engineering Team, Security Team, Compliance Team"
+  vision: "A comprehensive enterprise platform that delivers exceptional value while maintaining the highest standards of security, scalability, and user experience"
+  primary_goal: "Build a world-class enterprise platform that serves millions of users with 99.99% uptime and zero security incidents"
+  success_metrics: "User engagement >95%, MTTR <1 hour, Security incidents = 0, Performance score >95"
+  target_users: "Enterprise customers, administrators, developers, end-users"
+  competitors:
+    - name: "Competitor A"
+      strengths: "Established market presence, extensive feature set"
+      weaknesses: "Outdated architecture, poor security track record"
+      market_position: "Market leader but vulnerable to disruption"
+    - name: "Competitor B"
+      strengths: "Modern architecture, good user experience"
+      weaknesses: "Limited scalability, security concerns"
+      market_position: "Fast-growing challenger"
+  market_opportunities:
+    - name: "Enterprise Security Gap"
+      description: "Competitors lack comprehensive security features"
+      advantage: "Zero-trust architecture with end-to-end encryption"
+    - name: "Scalability Limitations"
+      description: "Current solutions can't handle enterprise scale"
+      advantage: "Microservices architecture designed for billions of requests"
+  personas:
+    - name: "Enterprise IT Admin"
+      demographics: "35-55, technical background, risk-averse"
+      pain_points: "Security compliance, system reliability, vendor lock-in"
+      journey_map: "Evaluation → Pilot → Enterprise Deployment → Ongoing Management"
+    - name: "End User"
+      demographics: "25-45, digital-native, productivity-focused"
+      pain_points: "Complex interfaces, slow performance, learning curves"
+      journey_map: "Discovery → Trial → Adoption → Power User"
+  wireframes:
+    low_fidelity: "https://example.com/wireframes/low-fi"
+    high_fidelity: "https://example.com/wireframes/high-fi"
+    user_flows: "https://example.com/wireframes/flows"
+  ab_tests:
+    - name: "UI Simplification"
+      hypothesis: "Simplified UI will increase user engagement by 20%"
+      success_metrics: "User engagement, task completion time"
+      duration: "4 weeks"
+  i18n:
+    supported_languages: "English, Spanish, French, German, Japanese, Chinese"
+    rtl_support: "Yes"
+    cultural_considerations: "Date formats, number formatting, color symbolism"
+  data:
+    sources: "User inputs, third-party APIs, internal databases"
+    collection_methods: "Direct user input, API integrations, automated imports"
+    privacy_compliance: "GDPR, CCPA, SOC2, HIPAA compliant"
+  moat:
+    technical_barriers: "Proprietary algorithms, patented technologies"
+    network_effects: "Platform grows more valuable with each user"
+    switching_costs: "Extensive integrations, custom workflows, data migration"
+  revenue_streams:
+    - name: "Enterprise Subscription"
+      description: "Tiered subscription model for enterprise customers"
+      pricing_model: "Annual subscription with user-based tiers"
+      target_revenue: "$50M ARR"
+      timeline: "Q1 2025"
+    - name: "Professional Services"
+      description: "Implementation and customization services"
+      pricing_model: "Time and materials"
+      target_revenue: "$10M ARR"
+      timeline: "Ongoing"
+  features: []
+  mvp_features: []
+  post_mvp_features: []
+  technical:
+    performance:
+      response_time: "< 100ms for 95% of requests"
+      throughput: "10,000 requests/second sustained"
+      availability: "99.99% uptime SLA"
+    security:
+      authentication: "Multi-factor authentication with biometrics"
+      data_protection: "End-to-end encryption with HSM key management"
+      compliance: "SOC2 Type II, ISO 27001, FedRAMP certified"
+    integrations: []
+  timeline:
+    phases: []
+    milestones: []
+  risks:
+    technical: []
+    business: []
+  kpis:
+    primary: []
+    secondary: []
+  dependencies:
+    external: []
+    internal: []
+  assumptions: []
+  references: []
+  glossary: {}
+
+technical_design:
+  version: "3.0"
+  last_updated: "2024-12-09"
+  reviewers: "Chief Architect, Security Officer, DevOps Lead"
+  system_purpose: "Enterprise-grade platform serving millions of users with zero-downtime and zero-security-incidents"
+  tech_stack:
+    frontend: "React 18, TypeScript, Next.js, Tailwind CSS"
+    backend: "Node.js 18, GraphQL, TypeScript, Rust for performance-critical components"
+    database: "PostgreSQL 15, Redis Cluster, Elasticsearch"
+    infrastructure: "AWS EKS, CloudFront, Route53, WAF, Shield"
+    devops: "Terraform, Kubernetes, ArgoCD, Prometheus, Grafana"
+  architecture_diagram: "graph TB\n    A[CloudFront CDN] --> B[WAF]\n    B --> C[API Gateway]\n    C --> D[GraphQL Service]\n    D --> E[Microservices]\n    E --> F[PostgreSQL]\n    E --> G[Redis]\n    E --> H[Elasticsearch]"
+  components: []
+  data_models: []
+  database:
+    primary: "PostgreSQL 15 with TimescaleDB for time-series data"
+    caching: "Redis Cluster with 99.99% uptime SLA"
+    backup: "Continuous backups with 30-day retention, cross-region replication"
+    migration: "Flyway for schema migrations, automated rollback procedures"
+  data_flow_diagram: "graph LR\n    A[Users] --> B[CDN]\n    B --> C[API Gateway]\n    C --> D[Services]\n    D --> E[Databases]\n    E --> F[Analytics]"
+  security:
+    auth_method: "OAuth 2.1 + OIDC with JWT"
+    authz_model: "RBAC + ABAC with policy engine"
+    session_mgmt: "Stateless JWT with rotation, secure cookies"
+    encryption_at_rest: "AES-256-GCM with envelope encryption"
+    encryption_in_transit: "TLS 1.3 with perfect forward secrecy"
+    key_management: "AWS KMS with automatic rotation, HSM-backed"
+    data_classification: "Public, Internal, Confidential, Restricted"
+    attack_surface:
+      external_apis: "GraphQL API, REST APIs, Webhooks"
+      internal_services: "100+ microservices, message queues, databases"
+      data_stores: "PostgreSQL, Redis, S3, Elasticsearch"
+    zero_trust:
+      identity: "Continuous authentication, risk-based access"
+      least_privilege: "Just-in-time access, ephemeral credentials"
+      micro_segmentation: "Network policies, service mesh isolation"
+    contract_testing:
+      framework: "Pact"
+      consumers: "Mobile app, Web app, Third-party integrations"
+      providers: "All microservices with OpenAPI specs"
+  api:
+    version: "3.0.0"
+    base_url: "https://api.enterprise.com"
+    auth: "Bearer Token + API Key"
+    endpoints: []
+  performance:
+    api_response: "< 50ms P95"
+    page_load: "< 1.5s"
+    db_queries: "< 10ms P95"
+    concurrent_users: "1M+ concurrent"
+    rps: "100,000 sustained"
+    data_processing: "Real-time stream processing"
+    scaling:
+      horizontal: "Auto-scaling groups, Kubernetes HPA"
+      vertical: "Instance type optimization, resource quotas"
+    caching: "Multi-layer caching: CDN, application, database"
+  integrations:
+    external: []
+    internal: []
+  deployment:
+    compute: "Kubernetes pods with resource limits and requests"
+    network: "VPC with security groups, NACLs, and WAF rules"
+    storage: "S3 with encryption, versioning, and lifecycle policies"
+    cicd:
+      source_control: "GitHub Enterprise with branch protection"
+      build: "GitHub Actions with security scanning"
+      testing: "Comprehensive test suites: unit, integration, e2e, security"
+      deployment: "ArgoCD with progressive delivery and rollback"
+    environments:
+      development: "Full-stack local development with Docker"
+      staging: "Production-like environment with synthetic traffic"
+      production: "Multi-region deployment with traffic shifting"
+  monitoring:
+    logging:
+      levels: "DEBUG, INFO, WARN, ERROR with structured logging"
+      aggregation: "ELK Stack with retention policies"
+      retention: "90 days hot, 7 years cold storage"
+    metrics:
+      application: "Custom metrics, business KPIs, performance indicators"
+      infrastructure: "System metrics, container metrics, network metrics"
+      business: "User actions, feature usage, conversion funnels"
+    alerting:
+      critical: "Immediate response required (<5min)"
+      warning: "Monitor and respond (<1hr)"
+      channels: "PagerDuty, Slack, Email with escalation"
+  architectural_decisions: []
+  future_considerations:
+    technology: "Evaluate emerging technologies quarterly"
+    scalability: "Plan for 10x growth over 3 years"
+    extensibility: "Plugin architecture for third-party integrations"
+  ai_prompts:
+    primary: "You are an enterprise software architect with 15+ years experience building scalable, secure systems."
+    context: "Always prioritize security, scalability, and maintainability. Include comprehensive error handling and monitoring."
+    version_control: "All prompts versioned with semantic versioning"
+    testing: "Rigorous testing including security, performance, and chaos engineering"
+    performance: "Monitor all changes with APM tools and establish performance budgets"
+    ethics:
+      bias: "Implement fairness checks and bias detection in ML components"
+      transparency: "Document all algorithmic decisions and data usage"
+      oversight: "All AI-generated code reviewed by senior engineers"
+  references: []
+  glossary: {}
+  diagrams: []
+
+features_list:
+  - id: "F001"
+    name: "Zero-Trust Authentication"
+    description: "Implement comprehensive zero-trust authentication system"
+    priority: "Critical"
+    status: "In Progress"
+    epic: "Security Foundation"
+    story_points: "21"
+    assignee: "Security Engineer"
+    start_date: "2024-12-09"
+    due_date: "2025-01-15"
+    dependencies: "None"
+    acceptance_criteria: "All users authenticated with MFA, risk-based access control implemented"
+    tdd_section_link: "Security Design"
+    sprint_assignment: "Sprint 1-3"
+    risk_level: "High"
+    business_value_score: "10"
+    technical_debt_impact: "Low"
+    feature_flag: "zero_trust_auth"
+    ab_test_id: "AUTH_ADV_001"
+    revenue_impact: "High"
+    user_segment: "All Users"
+    notes: "Critical for enterprise compliance and security"
+
+development_guide:
+  version: "2.0"
+  last_updated: "2024-12-09"
+  coding_standards: {}
+  general_principles: []
+  code_review_checklist: []
+  project_structure: ""
+  file_naming: []
+  import_organization: []
+  git:
+    branching_strategy: "GitFlow with security branch protection"
+    commit_convention: "Conventional commits with security validation"
+    pr_process: []
+  testing:
+    levels: {}
+    organization: ""
+    mocking: ""
+  error_handling:
+    types: {}
+    logging: []
+    monitoring: ""
+  performance:
+    frontend: []
+    backend: []
+    database: []
+    caching: ""
+  security:
+    auth: []
+    data_protection: []
+    input_validation: []
+    headers: []
+  modern_paradigms:
+    best_practices: []
+    design_patterns: {}
+    architecture: []
+  automation:
+    pre_commit_hooks: []
+    pr_automation: []
+    automated_testing: []
+  profiling:
+    frontend: []
+    backend: []
+    monitoring: []
+  scripts:
+    development: {}
+    build: {}
+    deployment: {}
+  anti_patterns:
+    code_quality: []
+    security: []
+    performance: []
+    architecture: []
+  references: []
+  glossary: {}
+  tools: {}
+
+sprint_planning:
+  version: "1.5"
+  last_updated: "2024-12-09"
+  timeline:
+    start_date: "2024-12-09"
+    end_date: "2025-06-09"
+    duration: "6 months"
+    sprint_length: "2 weeks"
+    total_sprints: "12"
+  team:
+    capacity: "60 story points per sprint"
+    velocity: "55 points/sprint (average)"
+    ai_velocity: "70 points/sprint (with AI assistance)"
+    velocity_multiplier: "1.27x (AI-assisted vs manual)"
+    members: "5 Backend Engineers, 3 Frontend Engineers, 2 DevOps Engineers, 1 Security Engineer, 1 QA Engineer, 1 Product Manager, 1 Scrum Master"
+  sprints: []
+  milestones: []
+  dependencies:
+    cross_sprint: []
+    external: []
+  risks:
+    project_level: []
+  ai_risks:
+    development:
+      - name: "Complex System Integration"
+        description: "Integrating multiple complex systems with tight coupling"
+        impact: "Development delays and integration issues"
+        mitigation: "Comprehensive integration testing and phased rollout"
+    context:
+      - name: "Large Codebase Navigation"
+        description: "AI agents losing context in large enterprise codebase"
+        impact: "Inconsistent implementation across services"
+        mitigation: "Clear architectural documentation and service boundaries"
+    quality:
+      - name: "Enterprise Security Requirements"
+        description: "AI missing subtle security requirements in enterprise context"
+        impact: "Security vulnerabilities in production"
+        mitigation: "Mandatory security review for all AI-generated code"
+  resources:
+    team_members: []
+    external: []
+  buffer:
+    sprint_buffer: "15% per sprint"
+    project_buffer: "20% total"
+    scope_change: "10% for scope changes"
+    guidelines: []
+  reviews:
+    sprint_planning: []
+    velocity: []
+  metrics:
+    velocity:
+      historical: "50 points/sprint"
+      current: "55 points/sprint"
+      trend: "Improving with AI assistance"
+    quality: []
+    progress: []
+  references: []
+  glossary: {}
+
+sprint:
+  number: "1"
+  name: "Security Foundation Sprint"
+  start_date: "2024-12-09"
+  end_date: "2024-12-23"
+  duration: "2"
+  goal: "Establish enterprise-grade security foundation"
+  owner: "Security Engineer"
+  ai_agents: "Claude (Security), GitHub Copilot (Code), Custom Security AI (Compliance)"
+  capacity: "60"
+  objectives:
+    - "Implement zero-trust authentication infrastructure"
+    - "Set up comprehensive audit logging"
+    - "Establish security monitoring and alerting"
+    - "Create security testing framework"
+  success_criteria:
+    - "All authentication flows secured with zero-trust principles"
+    - "Complete audit trail for all user actions"
+    - "Real-time security monitoring operational"
+    - "Automated security testing integrated into CI/CD"
+  deliverables:
+    - "Zero-trust auth service"
+    - "Audit logging system"
+    - "Security monitoring dashboard"
+    - "Security test suite"
+  tasks: []
+  parallel_agents:
+    coordination: []
+    conflict_resolution: "Security requirements take precedence"
+    hallucination_mitigation: "All security code reviewed by certified security engineers"
+  api_integration:
+    external: []
+    internal: []
+  environmental:
+    carbon_footprint: "Optimize for server efficiency and use green energy regions"
+    energy_efficiency: "Implement efficient algorithms and caching strategies"
+    sustainable_practices: []
+  definition_of_done:
+    code_quality: []
+    testing: []
+    documentation: []
+    deployment: []
+  velocity:
+    planned_points: "60"
+    duration: "10"
+    daily_velocity: "6.0"
+    completed_points: "0"
+    actual_duration: "0"
+    actual_daily_velocity: "0"
+    analysis: "To be calculated during sprint"
+  retrospective:
+    metrics: []
+    went_well: []
+    improvements: []
+    action_items: []
+  changelog:
+    planning:
+      date: "2024-12-09"
+      changes: "Initial enterprise security sprint planning"
+    daily_updates: []
+    review:
+      date: "2024-12-23"
+      changes: "Security sprint review and compliance verification"
+    master_index:
+      date: "2024-12-09"
+      changes: "Security-focused master index updates"
+    prompt_iterations: []
+  references: []
+  glossary: {}
+
+master_index:
+  version: "2.0"
+  last_updated: "2024-12-09"
+  update_triggers: []
+  validation:
+    health_checks: []
+    link_validators: []
+  change_management:
+    rfc_process: []
+    branch_strategy: "GitFlow Enterprise"
+    commit_convention: "Conventional commits with enterprise extensions"
+    pr_reviews: "Required security review for all changes"
+  monitoring:
+    engagement: []
+    quality: []
+    adoption: []
+  resources:
+    training: []
+    support: []
+    tools: []
+  owners:
+    prd: "Chief Product Officer"
+    features: "Product Manager"
+    technical_design: "Chief Technology Officer"
+    development_guide: "Engineering Director"
+    sprint_planning: "VP of Engineering"
+    sprint_template: "Engineering Manager"
+    adr: "Enterprise Architect"
+    performance: "Performance Engineering Lead"
+    security: "Chief Information Security Officer"
+    technical_debt: "Technical Debt Coordinator"
+    api: "API Product Manager"
+    incident_response: "Incident Response Coordinator"
+    data_migration: "Data Engineering Lead"
+  templates_reference: []
+  external_tools: []
+  glossary: {}
+  changelog: []
+
+# Output configuration
+output:
+  directory: "docs"
+  format: "markdown"
+  include_toc: true
+  include_metadata: true
+

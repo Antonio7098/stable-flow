@@ -1,0 +1,60 @@
+# Project planning files
+plan.md
+notes.md
+todo.md
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated docs (if you want to ignore them)
+docs/generated/
+examples/*/docs/
+
+# Testing and development artifacts
+tests/
+test_*/
+*_test.py
+*_tests.py
+pytest.ini
+.pytest_cache/
+coverage/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+.cache/
+
+# Project-specific generated content
+examples/*/project-config.yaml
+examples/*/docs/
+examples/*/generated/

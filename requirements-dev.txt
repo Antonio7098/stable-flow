@@ -1,0 +1,33 @@
+# Development dependencies for Stable Flow
+# Install with: pip install -r requirements-dev.txt
+
+# Testing
+pytest>=7.0.0
+pytest-cov>=4.0.0
+pytest-xdist>=3.0.0  # Parallel test execution
+
+# Code Quality
+black>=22.0.0
+flake8>=6.0.0
+mypy>=1.0.0
+isort>=5.10.0
+
+# Development Tools
+pre-commit>=3.0.0
+tox>=4.0.0
+
+# Performance Profiling
+memory-profiler>=0.61.0
+line-profiler>=4.0.0
+
+# Documentation
+sphinx>=5.0.0
+sphinx-rtd-theme>=1.2.0
+
+# Utilities
+bump2version>=1.0.0  # Version management
+twine>=4.0.0        # Package uploading</content>
+</xai:function_call name="write">
+<parameter name="file_path">.pre-commit-config.yaml
+
+

@@ -29,19 +29,6 @@ Thumbs.db
 docs/generated/
 examples/*/docs/
 
-# Testing and development artifacts
-tests/
-test_*/
-*_test.py
-*_tests.py
-pytest.ini
-.pytest_cache/
-coverage/
-.coverage
-htmlcov/
-.tox/
-.nox/
-
 # Build artifacts
 build/
 dist/

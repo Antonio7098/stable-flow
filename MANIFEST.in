@@ -32,12 +32,9 @@ global-exclude __pycache__
 global-exclude .DS_Store
 global-exclude Thumbs.db
 
-# Exclude test files from distribution
+# Exclude test files from distribution (tests are dev-only and not packaged)
+recursive-exclude tests *
 exclude tests/*
 exclude tests/conftest.py
 exclude tests/test_*.py
 exclude tests/utils/*
-recursive-exclude tests *</content>
-</xai:function_call name="write">
-<parameter name="file_path">LICENSE
-

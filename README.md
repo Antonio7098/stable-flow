@@ -429,6 +429,31 @@ python -m pytest tests/test_integration.py
 
 **Test Results**: ✅ 46/46 tests passing (100% success rate)
 
+### Optional: Tests are for contributors (not required for users)
+
+Stable Flow ships with a comprehensive test suite for contributors. If you're only using Stable Flow to generate documentation, you do not need the test files or development dependencies.
+
+- Using the project (no tests needed): You can ignore the `tests/` folder entirely. It is excluded from package distributions and not required to run Stable Flow.
+- Contributing to the project (tests recommended): Install development dependencies and run the test suite.
+
+To install testing/development dependencies:
+
+```bash
+pip install -r requirements-dev.txt
+python -m pytest -q
+```
+
+To remove testing files from your local clone (optional for users who don't plan to contribute):
+
+```bash
+git rm -r --cached tests || true
+git rm --cached pytest.ini || true
+rimraf tests 2> NUL || rm -rf tests
+del /f /q pytest.ini 2> NUL || rm -f pytest.ini
+```
+
+Note: Removing files is optional and only affects your clone. Package distributions published to PyPI already exclude tests via `MANIFEST.in`.
+
 ### Test Coverage
 
 - **Unit Tests**: Individual functions and classes

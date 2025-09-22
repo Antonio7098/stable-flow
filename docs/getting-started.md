@@ -172,6 +172,33 @@ sprint_template:
 - **Customize templates** for project-specific needs
 - **Maintain consistency** across all documents
 
+## Testing (Optional for Contributors)
+
+If you plan to contribute to Stable Flow or modify the internals, set up the development environment and run tests:
+
+```bash
+# Install development (testing) dependencies
+pip install -r requirements-dev.txt
+
+# Run tests
+python -m pytest -q
+```
+
+If you're only using Stable Flow to generate documentation, you do not need the tests or dev dependencies.
+
+### Removing test files (optional)
+
+You can remove the test files from your local clone if you don't need them:
+
+```bash
+git rm -r --cached tests || true
+git rm --cached pytest.ini || true
+rimraf tests 2> NUL || rm -rf tests
+del /f /q pytest.ini 2> NUL || rm -f pytest.ini
+```
+
+Note: Tests are excluded from package distributions via `MANIFEST.in`.
+
 ## Troubleshooting
 
 ### Common Issues

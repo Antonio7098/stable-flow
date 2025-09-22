@@ -196,6 +196,65 @@ stable-flow templates
 stable-flow --help
 ```
 
+### Generate into an external project
+
+You can keep Stable Flow separate and generate docs into another repository.
+
+Recommended layouts:
+
+```text
+your-project/
+├── docs/                    # output target for generated docs
+├── your-project-config.yaml # Stable Flow config for this project
+├── src/
+└── README.md
+```
+
+Or vendored tool layout:
+
+```text
+your-project/
+├── tools/
+│   └── stable-flow/         # submodule or vendored copy
+├── docs/
+└── your-project-config.yaml
+```
+
+Run generation (Windows PowerShell):
+
+```powershell
+# From the stable-flow repo
+cd C:\ANTONIO\Coding\stable-flow
+.\venv\Scripts\Activate.ps1
+
+python .\scripts\process_templates.py `
+  --config C:\path\to\your-project\your-project-config.yaml `
+  --output C:\path\to\your-project\docs
+```
+
+Run generation (Unix/macOS):
+
+```bash
+cd /path/to/stable-flow
+source venv/bin/activate
+
+python scripts/process_templates.py \
+  --config /path/to/your-project/your-project-config.yaml \
+  --output /path/to/your-project/docs
+```
+
+Alternatively, install the CLI once and run from anywhere:
+
+```bash
+# From stable-flow
+pip install -e .
+
+# From your project root
+stable-flow generate \
+  --config ./your-project-config.yaml \
+  --output ./docs
+```
+
 ### Configuration
 
 Create a `project-config.yaml` file:

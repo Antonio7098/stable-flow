@@ -2,6 +2,10 @@
 
 This guide covers the comprehensive testing strategy for Stable Flow, including unit tests, integration tests, end-to-end tests, and testing best practices.
 
+> Note: Tests are optional for users. If you are just using Stable Flow to generate documentation, you do not need the test files or development dependencies. See the guidance in README under “Optional: Tests are for contributors” and in Getting Started under “Testing (Optional for Contributors).”
+- README: ../README.md#optional-tests-are-for-contributors
+- Getting Started: ./getting-started.md#testing-optional-for-contributors
+
 ## Table of Contents
 
 - [Testing Strategy](#testing-strategy)
